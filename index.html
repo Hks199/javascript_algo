@@ -1,0 +1,918 @@
+<h3>Practice Project</h3>
+
+
+<script>
+    // console.log("JavaScript");
+    //     let arr = [1,2,3,4,5,6,7,8,9]
+
+    //     let output = arr.filter((d)=>{
+    //   return d%4==0
+    // })
+    // console.log(output)
+
+
+    // let name = {
+    //     firstname : "Harish",
+    //     lastname : "Sahu",
+    //     printname : function(){
+    //         console.log("hi");
+    //     }
+    // }
+
+    // name.printname();
+
+
+    // function detail(){
+    //     // console.log("hi Harish")
+
+    // }
+
+    // Array.prototype.show = function(){
+    //     return this;
+    // }
+    // const array = ["Harish"];
+    // console.log(array.show());
+
+    // Array.prototype.arrayconvertIntoObject = function(){
+    //     let newObject = {};
+
+    // }
+
+    // let obj1 = {
+    //     Name : "Harish",
+    //     getName : function(){
+    //         return this.Name;
+    //     },
+    //     getRollnumber : function(){
+    //        return this.rollNumber;
+    //     }
+    // }
+
+    // let obj2 = {
+    //     rollNumber : 212,
+    //     __proto__ : obj1
+    // }
+
+    // let obj3 = {
+    //    Contact :  "9518545028",
+    //    getMobilenumber : function(){
+    //        return this.Contact;
+    //     },
+    //    __proto__ : obj2
+    // }
+
+    // console.log(obj2.getRollnumber())
+    // console.log(obj3.getMobilenumber())
+
+    // Array.prototype.arrayconvertIntoObject = function(){
+    //     let newObject = {};
+    //     let count = 0;
+    //     this.forEach((element)=>{
+    //         newObject[count] = element;
+    //         count++;
+    //     })
+    //     return newObject;
+    // }
+    // const arr = ["Harish","Akshay","Palash","shubham"];
+    // console.log(arr.arrayconvertIntoObject());
+
+
+    // function func(){
+    //     let Name = "Harish"
+    //     return Name
+    // }
+
+    // let Func = func();
+
+    // func.prototype.student = {
+    //     Name : "Monu",
+    //     LastName : "Sahu"
+    // }
+
+    // console.log(Func);
+
+    // let obj ={
+    //     Name : "Harish",
+    //     LastName : "Sahu",
+    //     __proto__ : {Names : "Pankaj", LastNames : "Sahu" }
+    // }
+    // console.log(obj.__proto__);
+
+    // function Person(name){
+    //     this.name = name
+    //  };
+
+    // var eve = new Person("Eve");
+
+    // console.log(Person.prototype)
+
+    // eve.__proto__ == Person.prototype //true
+
+    // console.log(eve.prototype)
+
+    // eve.prototype  //undefined
+
+    // let arrowfunc = ()=>{
+    //     let name = "Shraddha";
+    //     console.log(name)
+    // }
+    // // const arrowsfunc = new arrowfunc()
+    // console.log(arrowfunc.prototype) // undefined
+
+    // const jan = {
+    //     Month1 : "JanWari"
+    // }
+
+    // const feb = {
+    //     Month2 : "Februwari",
+    //     __proto__ : jan
+    // }
+
+    // const march = {
+    //     Month3 : "Februwari",
+    //     // __proto__ : feb
+    // }
+
+
+
+    // month.__proto__ = feb;
+
+    // console.log(march.Month2)
+
+    // String.prototype.trueCounter = function(){
+    //     console.log("True Length of the String is : " + this.trim().length )
+    // }
+    // "Harish".trueCounter()
+
+    // Object.prototype.messenger = function(){
+    //    console.log("Hi welcome")
+    // }
+    // const word = "harishkumarsahu";
+    // word.messenger();
+    // const arrays = [];
+    // arrays.messenger();
+
+    // function createProduct(product,price){
+    //     this.product = product;
+    //     this.price = price;
+    // }
+
+    // createProduct.prototype.productPrice = function(){
+    //     console.log(`${this.product} : ${this.price}`)
+    // }
+
+    // const football = new createProduct("football",500);
+    // football.productPrice();
+
+    // let Animal = {
+    //     walk : "Animal can walk",
+    //     eat : "Animal Can Eat"
+    // }
+
+    // let Rabbit = {
+    //     rabbit : "It is a kind of Herbiorous Animal",
+    //     __proto__ : Animal
+    // }
+
+    // let Lion = {
+    //     lion : "It is a Kind of Carniorous Animal",
+    //     __proto__ : Rabbit
+    // }
+
+
+    // let Human = {
+    //     human : "It is a very smart animal in Earth"
+    //     // __proto__ : Lion
+    // }
+
+    // Human.__proto__ = Lion;
+
+    // Object.setPrototypeOf(Human, Lion);
+
+    // console.log(Human.eat);
+
+    // arryaList = [1,2,3,4,5,6,7,8,9];
+
+    // Array.prototype.AddAllelement = function(){
+    //    let total = 0;
+    //     this.forEach(element => {
+    //         total = total + element;
+    //     });
+    //     console.log(total);
+    // }
+
+    // Array.prototype.AddAllelement = function(){
+    //    let total = this.reduce((acc,currVal) => {
+    //          acc = currVal + acc;
+    //          return acc
+    //     },0);
+    //     console.log(total);
+    // }
+
+    // arryaList.AddAllelement();
+
+    // [4,8,54,24,15,78,89].AddAllelement();
+
+    // Array.prototype.FindAreaofCircleinEachElement = function(){
+    //     let modifiedArr = this.map((element)=>{
+    //           return Math.PI*element*element;
+    //     })
+    //     console.log(modifiedArr);
+    // }
+
+    // let arr = [4,5,7,8,9]
+    // arr.FindAreaofCircleinEachElement();
+
+    // Object.prototype.sayHello = function(){
+    //     console.log("hello friends")
+    // };
+
+    // let Name = "harishkumarsahu";
+
+    // Name.sayHello();
+
+
+    // async function getData(){
+    //     return "Namaste"
+    // }
+
+    // let data = getData();
+    // console.log(data);
+
+    // function asynchronous_operational_method() {
+    // let first_promise = new Promise((resolve, reject) => resolve("Hello"));
+
+    // let second_promise = new Promise((resolve,reject)=>{
+    //     resolve("hey hello")
+    // })
+    // return first_promise
+    // }
+
+    // asynchronous_operational_method().then((data)=>{
+    //       console.log(data);
+    // })
+
+
+    // async function getStarWarsData() {
+    //   try {
+    //     const response = await fetch('https://swapi.dev/api/people/1/');
+    //     const data = await response.json();
+    //     console.log(data);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // }
+
+    // getStarWarsData();
+
+    // async function getdatafromAPI(){
+    //     try{
+    //         const resp = await fetch('https://swapi.dev/api/people/1/');
+    //         const data = await resp.json();
+    //         console.log(data);
+    //     }catch(error){
+    //         console.error(error);
+    //     }
+    // }
+    // getdatafromAPI();
+
+    // let first_promise = new Promise((resolve,reject)=>{
+    //     resolve("Hey Hi");
+    // })
+
+    // first_promise.then((data)=>{console.log(data)})
+
+    // const count = true;
+
+    // let countValue = new Promise(function (resolve, reject) {
+    //     if (count) {
+    //         resolve("There is a count value.");
+    //     } else {
+    //         reject("There is no count value");
+    //     }
+    // });
+    // console.log(countValue);
+
+    // countValue.then((data)=>{
+    //     return data;
+    // }).then((data)=>{
+    //     console.log(data);
+    // })
+
+
+    // let p1 = new Promise((resolve,reject)=>{
+    // setTimeout(()=>{reject("p1 reject")},2000);
+    // // setTimeout(()=>{resolve("p1 Resolved")},2000);
+    // })
+    // let p2 = new Promise((resolve,reject)=>{
+    // setTimeout(()=>{reject("p2 reject")},5000);
+    // // setTimeout(()=>{resolve("p2 Resolved")},5000);
+    // })
+    // let p3 = new Promise((resolve,reject)=>{
+    // setTimeout(()=>{reject("p3 reject")},7000);
+    // // setTimeout(()=>{resolve("p3 Resolved")},7000);
+    // })
+
+    // Promise.any([p1,p2,p3]).then((res)=>{
+    // console.log(res);
+    // }).catch((err)=>{
+    // console.error(err)
+    // })
+
+    // console.log(this);
+
+
+
+    // function x(){
+    //     console.log(this);
+    // }
+    // x();
+
+    // let Student1 = {
+    //     name : "Harish",
+    //     x    : function(){
+    //         console.log(this.name);
+    //     }
+    // }
+
+    // let Student2 = {
+    //     name : "Shubham"
+    // }
+
+    // Student1.x.call(Student2);
+
+
+    // let Person1 = {
+    //     name : "Harish",
+    //     x    :function abc(){
+    //         console.log(this);
+    //     }
+    // }
+
+    // Person1.x();
+    // let obj = {
+    //      a : 10,
+
+    //     abc : ()=>{
+    //         console.log(this.a); // window
+    //     }
+    // }
+
+    // obj.abc()
+
+    // function func1(){
+    //     const obj = {
+    //      a : 10,
+    //      func2 : function(){
+    //       let b = ()=>{
+    //          console.log(this);
+    //       }
+    //       b();
+    //     }
+
+    // }
+    // obj.func2();
+
+    // var name = "Harish"
+    // const obj = {
+    //     name: 'Alice',
+    //     greet: function() {
+    //         // Nested function within the object's method
+    //        let  innerFunction = ()=> {
+    //             console.log(`Hello, my name is ${this.name}`);
+    //         }
+
+    //         // Call the inner function
+    //         innerFunction();
+    //     }
+    // };
+
+    // // Call the object's method
+    // obj.greet();
+
+
+    // function outerFunction() {
+    //     let outerVariable = 'Outer';
+
+    //     function innerFunction() {
+    //         console.log(this); // Accessing outerVariable from enclosing lexical context
+    //     }
+
+    //     return innerFunction;
+    // }
+
+    // const innerFunc = outerFunction(); // innerFunc captures the enclosing lexical context
+    // innerFunc(); // Output: Outer
+
+    // var middleName = "Sahu"
+    // let arrowfunc = ()=>{
+    //     console.log(this.middleName)
+    // }
+    // arrowfunc();
+
+
+    // function getReqChair_fromEachRoom(rooms,requiredChairs){
+    // let required_chairs = requiredChairs;
+    // let chair_Taken = 0;
+    // const result = rooms.map(room => {
+    //         const [occupiedChairs, numberOfChairs] = room;
+    //         // return (chairs - occupants.length);
+    //         const freeChairAvailableinEachRoom = numberOfChairs - occupiedChairs.length;
+    //         const chairTakenFromEachRoom = Math.min(required_chairs,freeChairAvailableinEachRoom);
+    //         required_chairs = required_chairs - chairTakenFromEachRoom;
+    //         chair_Taken = chair_Taken + chairTakenFromEachRoom;
+    //         return chairTakenFromEachRoom;
+    //      })
+
+    //      if(chair_Taken < required_chairs){
+    //         return `Required ${required_chairs - chair_Taken} Chair`
+    //      }
+    //      return result;
+
+    // }
+
+    // const meeting_rooms = [['XXX', 5], ['XXXXX', 6], ['XXXXXX', 9], ['XXX',7], ['XXX',7], ['XXX',7]]  // need 8 chair
+    // const required_chairs = 8;
+
+    // console.log(getReqChair_fromEachRoom(meeting_rooms,required_chairs));
+
+
+    // function findSpareChairs(rooms, need) {
+    //     let chairsTaken = 0;
+    //     let chairsToTake = need;
+
+    //     // Iterate through each meeting room
+    //     const chairsToTakeFromRooms = rooms.map(room => {
+    //         const [occupants, chairs] = room;
+    //         const availableChairs = chairs - occupants.length;
+
+    //         // Determine how many chairs to take from this room
+    //         const chairsFromThisRoom = Math.min(chairsToTake, availableChairs);
+    //         chairsToTake -= chairsFromThisRoom;
+
+    //         // Update total chairs taken
+    //         chairsTaken += chairsFromThisRoom;
+
+    //         return chairsFromThisRoom;
+    //     });
+
+    //     // If we have not taken enough chairs, return an empty array
+    //     if (chairsTaken < need) {
+    //         return 'Not enough chairs available';
+    //     }
+
+    //     return chairsToTakeFromRooms;
+    // }
+
+    // // Example usage:
+    // const meetingRooms = [
+    //     ['XXX', 10],
+    //     ['XXXXX', 6],
+    //     ['XXXXXX', 8],
+    //     ['XXXX',8]
+    // ];
+    // const chairsNeeded = 7;
+
+    // console.log(findSpareChairs(meetingRooms, chairsNeeded));
+
+    // {
+    //     let a = 10;
+    //     var b = 20;
+    //     const c = 30;
+
+    // }
+
+    // console.log(b);
+
+    // function a() {
+    //     var x = 10;
+    //     var z = 92;
+
+    //     return function b() {
+    //         console.log(x);
+    //     }
+    // }
+
+    // var y = a();
+    // y();
+
+    // console.log(z);
+
+    //   let count = function(){
+    //     var privatecounter = 0; // implemented hidden variable
+    //     function changeBy(val){
+    //        privatecounter = privatecounter + val;
+    //     }
+    //     return {
+    //         increment : function(){
+    //             changeBy(1);
+    //         },
+    //         decrement : function(){
+    //             changeBy(-1);
+    //         },
+    //         value : function(){
+    //             return privatecounter;
+    //         }
+
+    //     }
+    // }
+
+    // let y = count();
+    // y.increment();
+    // console.log();
+    // console.log(count.value());
+
+    // let name = function(name){
+    //     function data(){
+    //         console.log("12");
+    //     }
+    // }
+
+    // console.log(name())
+
+    // **********************************************************This Keyword*****************************
+    // const student = {
+    //     firstName : "Harish",
+    //     lastName : "Sahu",
+    //     getName : function(){
+    //         let classs = 5;
+    //         let school = "MG";
+    //         // return `${this.firstName} ${this.lastName}`
+
+    //         // stand alone function referes to global execution context (window)
+    //         function getname(){
+    //         //    console.log(this.classs)  //undefined
+    //             const boy = ()=>{console.log(this)} // GEC
+    //             boy();
+    //         }
+
+    //         // const getname = ()=>{
+    //         //     console.log(this)   // this referes to the enclosed lexical context
+    //         // }
+    //         getname();
+
+
+    //     },
+    // }
+
+    // student.getName()
+
+    // ********************************************** Getter Setter ****************************************
+
+    // const student = {
+    //     name : "Pankaj",
+    //     class : "B.Tech",
+    //     branch : "Me",
+    //     get getdetail(){
+    //         return (`${this.mobile_Number} ${this.address}`).toUpperCase()
+    //     },
+
+    //     // setter method takes only one parameter
+    //     set setdetail(data){
+    //         this.mobile_Number = data[0];
+    //         this.address = data[1];
+    //     }
+    // }
+    // student.setdetail = ["9518545028","Nagpur"]
+    // console.log(student.getdetail)  // to call getter method don't use parenthesis
+    // console.log(student)
+
+    // let myname = "name"
+    // const student = {
+    //     name: "Pankaj",
+    //     class: "B.Tech",
+    //     branch: "Me",
+    // }
+    // console.log();
+
+    // ******************************************slice***************************************
+
+    // const arr = ["harish", "Ankush", "chandan", "Ashish"]; // it can remove multiple element
+    // const slicedarr = arr.slice(1, 3);
+    // console.log(slicedarr);
+
+    // *****************************************splice****************************************
+    // const removedElement = arr.splice(0, 2, "harsh", "Ankit");
+    // console.log(removedElement);  // returning removed element and replacing element;
+    // console.log(arr)
+
+    // const arrayObject = [
+    //     { name: "harish", id: 1, salary: 60000 },
+    //     { name: "harsh", id: 2, salary: 35000 },
+    //     { name: "harshit", id: 3, salary: 45000 },
+    //     { name: "hariharan", id: 4, salary: 55000 }
+    // ]
+
+    // const result = arrayObject.reduce((preval, currval) => {
+    //     if (preval < currval.salary) {
+    //         preval = currval.salary
+    //     }
+    //     return preval;
+    // }, 0)
+
+    // console.log(result);
+
+    // const transactions = [
+    //     { id: 1, type: 'debit', amount: 50 },
+    //     { id: 2, type: 'credit', amount: 100 },
+    //     { id: 3, type: 'debit', amount: 75 },
+    //     { id: 4, type: 'credit', amount: 200 },
+    //     { id: 5, type: 'debit', amount: 150 }
+    // ];
+
+    // const result = transactions.map((element) => {
+    //     return element.amount
+    // })
+    // console.log(result);
+
+
+    // let output = transactions.reduce(function (acc, curr) {
+    //     if (!acc[curr.type]) {
+    //         acc[curr.type] = curr.amount;
+    //     } else {
+    //         acc[curr.type] = acc[curr.type] + curr.amount;
+    //     }
+
+    //     return acc;
+
+    // }, {})
+
+    // console.log(output)
+
+
+    // const data = {
+    //     name: "harish",
+    //     lastName: "Sahu"
+    // }
+
+
+    // let Data = JSON.stringify(data);
+    // console.log(Data);
+    // console.log(JSON.parse(Data));
+
+    // const jwt = require('jasonwebtoken');
+    // require('dotenv').config();
+
+    // const authentication = async function (req, res, next) {
+    //     try {
+    //         const authHeader = req.headers['authorization'];
+    //         const token = authHeader && authHeader.split(' ')[1]
+
+    //         if (!token) {
+    //             res.status(401).json({ message: "token is missing" });
+    //         }
+    //         jwt.verify(token, process.env.SECRET_KEY, (err, decode) => {
+    //             if (err) {
+    //                 res.status(403).json({ message: "Invalid Token" })
+    //             }
+    //             req.user = decode;
+    //             next();
+    //         })
+
+
+
+    //     } catch (error) {
+    //         res.status(error.statusCode).json({ message: "Unauthorized user " })
+    //     }
+    // }
+
+    // const jwt = require('jsonwebtoken');
+    // require('dotenv').config();
+
+    // const authentication = async function (req, res, next) {
+    //     try {
+    //         const authHeader = req.headers('authorization');
+    //         const token = await authHeader && authHeader.split(' ')[1];
+
+    //         if (!token) {
+    //             res.status(401).json({ message: "Token Missing" })
+    //         }
+    //         jwt.verify(token, process.env.SECRET_KEY, (err, decode) => {
+    //             if (err) {
+    //                 res.status(403).json({message:"Invalid Token"});
+    //             }
+    //         })
+    //         req.user = decode;
+    //         next()
+    //     } catch (error) {
+    //         res.status(error.statusCode).json({ message: "Unauthorized User" })
+    //     }
+    // }
+
+    //***************************************Authorization Middleware**************************
+
+    // const authorization = (role) => {
+    //     return function (req, res, next) {
+    //         if (req.user && role.includes(req.user.role)) {
+    //             next()
+    //         } else {
+    //             res.status(403).json({ message: "Insufficient Permission" });
+    //         }
+    //     }
+    // }
+
+    // const jwt = require('jsonwebtoken');
+    // require('dotenv').config();
+
+    // const authentication = function (req, res, next) {
+    //     try {
+    //         const authHeader = req.headers('authorization');
+    //         const token = authHeader && authHeader.split(' ')[1];
+    //         if (!token) {
+    //             res.status(401).json({ message: "token is missing" });
+    //         }
+    //         jwt.verify(token, process.env.SECRET_KEY, (err, decode) => {
+    //             if (err) {
+    //                 res.status(403).json({ message: "Invalid Token" })
+    //             }
+    //             req.user = decode;
+    //             next();
+    //         })
+
+    //     } catch (error) {
+    //         res.status(error.statusCode).json({ message: "Unauthorized User", status: "failure" });
+    //     }
+    // }
+
+
+    // let obj = { name: "Harish Kumar" }
+    // // Object.seal(obj);
+    // obj["age"] = 25;
+    // console.log(obj)
+
+    // let data = [2, 0, 8, 5]
+    // // data.shift();
+    // data.unshift(10);
+    // console.log(data);
+
+    // let data = "true"
+    // console.log(!!data)
+
+    // let data = ["ankush", "harish", "Rani", "monu"]
+    // delete data[0];
+    // console.log(data);
+    // console.log([[[[]]]]);
+
+
+    // console.log(+true);
+
+    // let a = { name: "Harish" }
+    // let b = a;
+    // a.name = "Harish Kumar";     // both are pointing to same memory location
+
+    // console.log(b.name)
+
+    // let obj = { 1: "a", 2: "b", 3: "c" }
+    // console.log(obj.hasOwnProperty(1));
+    // console.log(obj.hasOwnProperty("1"));
+
+    // function sayHi() {
+    //     return () => 0;
+    // }
+    // console.log(typeof sayHi()());
+
+    // const number = [1, 2, 3, 4]
+    // number[4] = number;
+    // console.log(number);
+
+    // console.log(!!null);
+    // console.log(!!"");
+    // console.log(!!1)
+    // console.log(!0)
+
+    // let obj = { name: "Harish" };
+    // let arr = [obj];
+    // obj = null;
+
+    // console.log(obj);
+    // console.log(arr);
+
+    // const obj = { name: "Harish", age: 24, mobile_Number: "9518545028", address: "Nagpur" };
+    // for (const item in obj) {
+    //     console.log(item + ":" + obj[item]);
+    // }
+
+    // console.log(typeof (3 + 4 + '5'))
+
+    // console.log([] == []) // both array pointing different memory location
+
+    // let arr = [1, 2, 3, 4, 5, 6];
+    // let data = arr.map((element) => {
+    //     if (typeof element == "number") {
+    //         return;
+    //     }
+    // })
+    // console.log(data);
+
+    // (() => {
+    //     let x = y = 10;
+    // }
+
+    // )()
+    // console.log(typeof y)
+
+    // console.log(typeof ([]));
+
+    // console.log(true + 12)
+
+    // console.log(!undefined);
+
+    // class Bicycal {
+    //     constructor(model, name, speed) {
+    //         this.model = model
+    //         this.name = name
+    //         this.speed = speed
+    //     }
+
+    //     run() {
+    //         console.log(this.speed);
+    //     }
+    // }
+
+    // class E_Bicycal extends Bicycal {
+    //     constructor(model, name, speed, battery) {
+    //         super(model, name, speed)
+    //         this.battery = battery;
+    //     }
+
+    //     battery() {
+    //         console.log(this.battery);
+    //     }
+    // }
+
+
+    // const e_bicycal = new E_Bicycal("HERO1234", "HERO", "500 RPM", "Lithium_ion")
+
+    // e_bicycal.run();
+
+
+    // let num = "100";
+
+    // console.log(typeof num)
+    // let count = 0;
+    // function apple() {
+    //     console.log("apple");
+    //     count++;
+    //     if (count <= 100) {
+
+    //         apple();
+    //     }
+    // }
+    // apple();
+
+    // function factorial(item) {
+    //     if (item == 0) {
+    //         return 1
+    //     }
+    //     return item * factorial(item - 1);
+    // }
+
+    // console.log(factorial(5));
+
+
+    // let list = ["harish", "anu", "Radha", "shubh", "Patil"]
+    // let i = 0;
+    // while (i < list.length) {
+    //     console.log(list[i])
+    //     i++;
+    // }
+
+
+
+    // let money = 103;
+    // let price = 10;
+    // let total_apple = 0;
+
+    // function apple(x) {
+    //     if (x >= price) {
+    //         console.log(`I have ₹ ${x} and ${total_apple} Apple`);
+    //         purchase(x)
+    //     } else if (x > 0) {
+    //         console.log(`I have Insufficient amount ₹ ${x} and ${total_apple} Apple`);
+    //     } else {
+    //         console.log(`I Don't have Money but have ${total_apple} apple`);
+    //     }
+    // }
+
+    // function purchase(x) {
+    //     total_apple++;
+    //     apple(x - price);
+    // }
+    // apple(money);
+
+
+    // let a = 0;
+    // console.log(a++ + 5 + "5" + !0);
+    // console.log(!"")
+
+    let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    function reverse() {
+
+    }
+
+
+
+
+
+</script>
