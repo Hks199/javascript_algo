@@ -1,0 +1,58 @@
+<script>
+    // const animal = {
+    //     walk: "Can Walk",
+    //     eat: "Can eat"
+    // }
+
+    // const rebbit = {
+    //     jump: "Can Jump",
+    //     __proto__: animal
+    // }
+
+    // console.log(rebbit.walk);
+
+    //*************************************************************
+
+    // Array.prototype.sum = function () {
+    //     let total = 0;
+    //     for (let i = 0; i < this.length; i++) {
+    //         if (typeof this[i] === 'number') {
+    //             total = total + this[i];
+    //         }
+    //     }
+    //     return total;
+    // }
+    // console.log([1, 2, 3, 45, 5].sum());
+
+
+    // String.prototype.reverseString = function () {
+    //     let reverse_word = '';
+    //     for (let i = this.length - 1; i >= 0; i--) {
+    //         reverse_word = reverse_word + this[i];
+    //     }
+    //     return reverse_word;
+    // }
+
+    // console.log("harish kumar sahu".reverseString());
+
+    function prototypal(name, age, Football) {
+        this.name = name;
+        this.age = age;
+        this.sport = Football;
+        this.sports = function () {
+            console.log(`${name} age is ${age} play ${this.sport}`);
+        }
+    }
+
+    prototypal.prototype.sing = function () {
+        console.log(`he can sing a song`)
+    };
+
+    const Candidate1 = new prototypal("harish", 24, "Football");
+    Candidate1.sing();
+    Candidate1.sports()
+    console.log(Candidate1);
+
+
+
+</script>

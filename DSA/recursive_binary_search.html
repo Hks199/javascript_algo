@@ -1,0 +1,35 @@
+<script>
+
+    let element = [4, 8, 2, 4, 9, 12, 1, 11, 15, 14]
+    element.sort((a, b) => {
+        return a - b;
+    })
+
+    console.log(element);
+    let start = 0;
+    let end = element.length;
+    let position = undefined;
+    let find = 14;
+    function recursive_Binary_Search(element, start, end) {
+        let mid = Math.floor((start + end) / 2)
+        // console.log(mid);
+        if (element[mid] === find) {
+            position = mid;
+            // console.log(position);
+            return true
+
+        } else if (find > element[mid]) {
+            start = mid + 1;
+            recursive_Binary_Search(element, start, end);
+        } else {
+            end = mid - 1;
+            recursive_Binary_Search(element, start, end);
+        }
+    }
+
+    index = recursive_Binary_Search(element, start, end);
+    if (index) {
+        console.log("Data found in index " + position);
+    }
+
+</script>
