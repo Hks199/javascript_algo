@@ -37,14 +37,25 @@
 
 //************************************Insertion sort **************************************** */
 
-let arr = [23, 1, 10, 5, 2];
+let arr = [23, 8, 10, 5, 2,1];
 
-for (let i = 0; i < arr.length; i++) {
-    for (let j = i; j >= 0; j--) {
-        if (arr[j] < arr[j - 1]) {
-            let temp = arr[j];
-            arr[j] = arr[j - 1];
-            arr[j - 1] = temp;
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i; j >= 0; j--) {
+//         if (arr[j] < arr[j - 1]) {
+//             let temp = arr[j];
+//             arr[j] = arr[j - 1];
+//             arr[j - 1] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+for(let i = 0; i < arr.length; i++){
+    for(let j = i; j >= 0; j--){
+        if(arr[j] < arr[j - 1]){
+            let tem = arr[j];
+            arr[j] = arr[j - 1]
+            arr[j - 1] = tem;
         }
     }
     console.log(arr);

@@ -106,6 +106,7 @@
 // let str2 = "myname is harish kumar sahu";
 // function Anagram(str1, str2) {
 //     let str01 = str1.split('').sort().join();
+//     console.log(str1.split('').sort().join());
 //     // console.log(str01);
 //     let str02 = str2.split('').sort().join();
 //     // console.log(str02);
@@ -145,7 +146,70 @@
 
 // console.log(Anagram(str1, str2));
 
-let str1 = "myname is harish kumar sahu".replace(/[^a-zA-Z0-9]/g, '');
-let str2 = "myname is harish kumar sahu".replace(/[^a-zA-Z0-9]/g, '');
+// let str1 = "myname is harish kumar sahu".replace(/[^a-zA-Z0-9]/g, '');
+// let str2 = "myname is harish kumar sahu".replace(/[^a-zA-Z0-9]/g, '');
 
-console.log(str1);
+// console.log(str1);
+
+
+//******************************************************************************* */
+
+
+// function anagram(){
+
+//     let obj1 = {}
+//     let str = "harishkumarsahu"
+//     let str1 = "harishkumarsahu"
+    
+//     for(let i = 0; i < str.length; i++){
+//           let char = str[i]
+//           if(obj1[char]){
+//               obj1[char]++
+//           }else{
+//               obj1[char] = 1;
+//           }
+//     }
+    
+//     // console.log(obj1)
+    
+//     for (ch of str1) {
+//         if (!obj1[ch]) {
+//             return false
+//         }
+//         obj1[ch]--
+//     }
+//     return true;
+// }
+
+// console.log(anagram())
+
+const str1 = "HarishKumar";
+const str2 = "KumarHarish";
+
+
+function checkanagram(String1,String2){
+  let obj = {};
+  for(ch of String1){
+    if(obj[ch]){
+       obj[ch]++;
+    }else{
+       obj[ch] = 1;
+    }
+  }
+  console.log(obj);
+
+  for(ch of String2){
+    if(obj[ch]){
+       obj[ch]--
+    }else{
+       return false;
+    }
+  }
+  return true;
+}
+
+const isAnagram = checkanagram(str1,str2);
+
+console.log(isAnagram);
+
+

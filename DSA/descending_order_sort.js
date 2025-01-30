@@ -18,3 +18,20 @@ let arr = [8, 4, 12, 9, 20, 15]
 
 // descending_order(arr);
 
+// bubble sort
+
+function bubblesort(Array){
+   for(let i = 0; i < Array.length; i++){
+      for(let j = 0; j < Array.length - 1 - i; j++){
+         if(Array[j] < Array[j+1]){
+             let temp = Array[j];
+             Array[j] =  Array[j+1];
+             Array[j+1] = temp;
+         }
+      }
+   }
+   console.log(Array);
+}
+
+bubblesort(arr)
+

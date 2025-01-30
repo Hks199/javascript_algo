@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,4 +47,38 @@
 
 </body>
 
-</html>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geolocation Test</title>
+</head>
+<body>
+  <script>
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+      },
+      (error) => {
+        console.error(`Error: ${error.message}`);
+      }
+    );
+  </script>
+</body>
+</html> -->
+
+
+<canvas id="barcode"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode"></script>
+<script>
+  JsBarcode("#barcode", "9783161484100", {
+    format: "CODE128",
+    displayValue: true,
+    height: 40,
+  });
+</script>
